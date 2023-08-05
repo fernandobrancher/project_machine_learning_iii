@@ -1,0 +1,15 @@
+- Verificar uso de over/undersampling (não sei como faz nem onde se encaixaria)
+- Considerando que temos mais de 500mil amostras, fazer uma subamostragem para análise exploratória, etapas subsequentes de testes de modelo, usando o dataset completo somente para rodar o modelo final com os hiperparâmetros já definidos. 
+- Análise Exploratória inicial (atualizar análise após divisão do dataset em treino/teste)
+    - describe
+    - Mostrar dados em gráficos ao invés de tabelas
+    - Distribuições de variáveis categóricas e numéricas
+    - heatmap de correlação entre variáveis
+- Column Transformer, divisão em X_train, X_test, y_train, y_test
+    - Stratify no split de treino/teste devido ao desbalanceamento
+    - Scaler (ver qual usar de acordo com as distribuições dos dados)
+    - OneHot/Ordinal Encoder
+- Seleção de features
+- PCA para redução de dimensionalidade
+- Modelo não supervisionado para verificar clusters de clientes e padrões no dataset
+- Teste de 3 ou 4 modelos com grid/random search (lembrar que essa parte costuma demorar)
